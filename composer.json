@@ -1,0 +1,18 @@
+{
+    "name": "vendor/vsgame",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Vsgame\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sergio Munoz",
+            "email": "alfazsergi@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "5.2.*",
+        "tecnickcom/tcpdf": "^6.7"
+    }
+}
