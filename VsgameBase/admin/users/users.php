@@ -25,7 +25,7 @@ $usuarios = $modelo->obtenerUsuarios();
                 <li><a href="./userAdd.php">Añadir Usuario</a></li>
                 <li><a href="./userEdit.php">Modificar Usuario</a></li>
                 <li><a href="./userDelete.php">Eliminar Usuario</a></li>
-                <li><a href="../dashboard.php?logout=true"><?php if(isset($_SESSION['nickname'])) echo "Hola " . $_SESSION['nickname'] ." "?>Cerrar Sesión</a></li>
+                <li><a href="../dashboard.php?logout=true"><?php if (isset($_SESSION['nickname'])) echo "Hola " . $_SESSION['nickname'] . " " ?>Cerrar Sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -44,17 +44,28 @@ $usuarios = $modelo->obtenerUsuarios();
                         <th>Fecha de creacion</th>
                     </tr>
                     <?php
-                    foreach($usuarios as $usuario) {
+                    foreach ($usuarios as $usuario) {
                         echo "<tr>
                     <td>" . $usuario['id'] . "</td>
                     <td>" . $usuario['nickname'] . "</td>
                     <td>" . $usuario['email'] . "</td>
                     <td>" . $usuario['password'] . "</td>
                     <td>" . $usuario['imagen'] . "</td>
-                    <td>" . $usuario['fecha_registro'] . "</td>";
+                    <td>" . $usuario['fecha_registro'] . "</td>
+                    <td>
+                        <form action='userEdit.php' method='get'>
+                            <input type='hidden' name='id' value='" . $usuario['id'] . "'>
+                            <input type='submit' value='Modificar'>
+                        </form>
+                    </td>
+                    <td>
+                        <form action='userDelete.php' method='get'>
+                            <input type='hidden' name='id' value='" . $usuario['id'] . "'>
+                            <input type='submit' value='Eliminar'></input>
+                        </form>
+                    </td>";
                     }
                     ?>
-
                 </table>
                 <?php
                 ?>
