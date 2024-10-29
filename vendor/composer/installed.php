@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'vendor/vsgame',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'fdf4c90af4bf3d6ce86dfae5ea7414398710a40b',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'vendor/vsgame' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'fdf4c90af4bf3d6ce86dfae5ea7414398710a40b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
