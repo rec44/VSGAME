@@ -152,3 +152,11 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}

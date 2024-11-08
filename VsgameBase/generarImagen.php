@@ -1,6 +1,4 @@
 <?php
-$random = rand(1,30);
-
 $ataque = isset($_GET['ataque'])? $_GET['ataque'] : '25'; 
 $defensa = isset($_GET['defensa'])? $_GET['defensa'] : '20';
 
